@@ -1,4 +1,4 @@
 FROM ubuntu
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+COPY test.sh /test.sh
+RUN chmod +x /test.sh
+ENTRYPOINT ["/test.sh"]
